@@ -5,9 +5,24 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('cars').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+        {
+          "id": 1,
+          "VIN": "19UDE2F37HA001718",
+          "Make": "Acura",
+          "Model": "ILX",
+          "Mileage": 20000,
+          "Title": null,
+          "Transmission": null
+        },
+        {
+          "id": 2,
+          "VIN": "5J8TC1H31ML002614",
+          "Make": "Acura",
+          "Model": "rdx",
+          "Mileage": 20000,
+          "Title": null,
+          "Transmission": null
+        }
       ]);
     });
 };
